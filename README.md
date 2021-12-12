@@ -20,7 +20,7 @@ Used configuration: Python 3.8.8, PIP 21.3.1
 ## Instructions to execute the Automation Suite
 
 1. Create a project in up42.com and add the project ID and project key to this project.
-   Navigate to src\conf\config.py and update below fields:
+   Navigate to src\conf\projectconf.py and update below fields:
     project_id = <your_project_id>
     project_key = <your_project_key> 
 
@@ -39,7 +39,7 @@ Used configuration: Python 3.8.8, PIP 21.3.1
  
 4. Run the tests!
 
-   - **python -m pytest** (Runs all tests))  
+   - **python -m pytest** (Runs all tests)
    OR
    - **python -m pytest src\tests\<filename>** (On windows; Runs individual files)  
    
