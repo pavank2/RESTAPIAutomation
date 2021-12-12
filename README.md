@@ -19,8 +19,8 @@ Used configuration: Python 3.8.8, PIP 21.3.1
 
 ## Instructions to execute the Automation Suite
 
-1. Create a project in up42.com and add the project ID and project key to this project.
-   Navigate to src\conf\projectconf.py and update below fields:
+1. Create a project in up42.com and add the project ID and project key to this project.  
+   Navigate to src\conf\projectconf.py and update below fields:  
     project_id = <your_project_id>
     project_key = <your_project_key> 
 
