@@ -47,6 +47,7 @@ class Utilities:
     """
     Function to verify job status asynchronously until it completes 
     """
+
     @staticmethod
     def verify_job_status(token, job_id):
         endpoint = Project.project_id + '/jobs/' + job_id
@@ -61,15 +62,16 @@ class Utilities:
                 break
         return response
 
-
     @staticmethod
     def delete_workflow(workflow_id, token):
+        logger.info("Deleting workflow")
         endpoint = Project.project_id + '/workflows/' + workflow_id
         response = RequestsUtility.delete(endpoint, token)
 
     """
     Function to verify the time difference between element creation and current time
     """
+
     @staticmethod
     def calculate_time_difference(created_at):
         created_date = pd.to_datetime(created_at)
@@ -80,6 +82,7 @@ class Utilities:
     """
     Function to verify the task and block details in response compared to input file
     """
+
     @staticmethod
     def verify_response_tasks(response_list):
         with open("src/data/tasks.json") as f:

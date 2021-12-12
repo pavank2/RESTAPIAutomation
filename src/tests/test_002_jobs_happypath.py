@@ -32,6 +32,7 @@ def test_create_and_run_job(create_tasks):
     logger.info("Verify job status asynchronously until it completes")
     response = Utilities.verify_job_status(token, job_id)
     assert response['data']['status'] == 'SUCCEEDED'
+    print(response)
 
 
 def test_get_jobs(create_tasks):
