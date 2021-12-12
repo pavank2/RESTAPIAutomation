@@ -1,0 +1,13 @@
+# Created by pytest automatically.
+.pytest_cache
+pyvenv.cfg
+Scripts
+scripts
+Lib
+lib
+.idea
+_pycache_
+Include
+
+
+
